@@ -1,0 +1,368 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("images/background2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    background-color: #011627;
+}
+/* Navigation Bar */
+
+.logo-image{
+    width: 86px;
+    margin-left: 23px;
+    cursor: pointer;
+}
+.navbar {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 55px;
+    background-color: #011627;
+    margin: auto;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .navbar li.home a,
+  .navbar li.comments a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .navbar li.home a::after,
+  .navbar li.comments a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  
+  }
+  
+  .navbar ul {
+    float: right;
+    margin-top: 3px;
+  }
+  
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 17.5px;
+  
+  }
+  
+  .navbar ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 13px;
+  
+  }
+  
+  
+li a:hover {
+background: gray;
+transition: 0.5s;
+border-radius: 1px; 
+
+}
+
+
+/* Top 5 */
+
+.top5{
+    background-image: url(images/background3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -40px;
+    padding-top: 30px; 
+}
+
+.horizontalLine {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.horizontalLine img {
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.details {
+    padding-top: 30px;
+    font-size: 30px;
+    background-color: #011627;
+    height: 270px; 
+    width: 343.63px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #e4d0f7;
+    margin-top: 20px;
+
+}
+
+.videoImage {
+    position: relative;
+    
+}
+.image{
+    transition: 0.5s;
+}
+
+.YT {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ;
+    border: 1px solid white;
+    background-color: #011627;
+    padding: 5px 8px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.YT a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.videoImage:hover .YT {
+    opacity: 1; 
+}
+.videoImage:hover .image{
+    opacity: 0.8;
+}
+.YT:hover{
+    background-color: #4c4a87;
+    box-shadow: 3px 3px 3px black;
+}
+
+
+/* R&B page */
+
+.container h1, p{
+    color: white;
+}
+.container h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.container p{
+    line-height: 25px;
+}
+.container{
+    width: 700px;
+    height: 300px;
+    margin-top: 350px;
+    margin-left: 40px;
+    height: 100vh;
+}
+.container a{
+    background-color: #011627;
+    color: aqua;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.container a:hover{
+    color: #ffffff;
+    background-color: #4c4a87;
+    box-shadow: 3px 3px #011627;
+}
+
+
+/* Albums */
+.albums{
+    background: linear-gradient(349deg, rgba(44,140,153,1) 0%, rgba(1,22,39,1) 73%);
+}
+
+#albumDetails, #top5{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container2 div{
+    width: 40%;
+    padding: 50px;
+}
+.container2 img{
+    float: left;
+    height: 300px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.container2 img:hover{
+    box-shadow: 5px 5px 5px rgb(15, 16, 22);
+}
+.container2 p{
+    margin: 45px 20px 0px;
+    line-height: 40px;
+    color: #e4d0f7;
+    margin-bottom: 60px;
+}
+.container2 span{
+    font-size: 20px;
+    color: #ffffff;  
+}
+
+.container2 a{
+    background-color: #011627;
+    color: #5e9fd4;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.container2 a:hover{
+    background-color: #5e9fd4;
+    color: #011627;
+    box-shadow: 4px 4px 4px black;
+}
+
+
+
+
+
+/* HOF */
+
+.HallOfFame{
+    background: linear-gradient(200deg, rgba(44,140,153,1) 0%, rgba(1,22,39,1) 73%);
+    padding-top: 20px;
+}
+
+.hofScreen{
+    height: 100vh;
+}
+#hof{
+    color: #ffffff;
+    text-align: center;
+}
+.hallOfFame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.hallOfFame img{
+    height: 300px;
+    cursor: pointer;
+    margin: 10px 30px;
+    transition: 0.5s;
+}
+
+.hallOfFame div p{
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    font-size: larger;
+    padding: 5px 0px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 2px #000000;
+    border-radius: 10px;
+}
+.moreInfo{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.hallOfFame a:hover+p{
+    transition: 1s;
+    opacity: 1;
+    background-color: #031d32;
+}
+.hallOfFame img:hover{
+    box-shadow: 3px 3px 3px black;
+}
+
+/* To Top */
+
+#toTopButton{
+    background-color: #011627;
+    border: 1px solid #5e9fd4;
+    border-radius: 8px;
+    color: #5e9fd4;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 95%;
+    text-decoration: none;
+}
+#toTopButton:hover{
+    background-color: #5e9fd4;
+    color: #011627;
+}
+
+
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #011a2f;
+}
+footer p{
+    color: #e4d0f7;
+    font-size: 12px;
+    margin-top: 18px;
+}
+footer a{
+    margin: 10px 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #022643;
+    color: #e4d0f7;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    font-size: 13.5px;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color:#011627;
+}
+
+
+
+

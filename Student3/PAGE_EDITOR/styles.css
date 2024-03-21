@@ -1,0 +1,120 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #011627;
+}
+.heading{
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    color: #a5ccec;
+}
+.heading h1{
+    text-align: center;
+}
+.heading span{
+    font-size: 20px;
+    color: #e1e8ed;
+    text-shadow: 1px 1px 1px gray;
+}
+.myDetails{
+    width: 40%;
+    padding-left: 30%;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.myDetails img{
+    width: 200px;
+    border-radius: 20px;
+    left: 40%;
+    float:left; 
+    box-shadow: 5px 5px 5px black;
+}
+.myDetails p{
+    padding-left: 250px;
+    padding-top: 10px;
+}
+.myDetails a{
+    text-decoration: none;
+    color: #e1e8ed;
+}
+
+.quiz, .details, .rnb{
+    text-align: center;
+    background-color: #011627;
+    padding: 15px 10px ;
+    border-radius: 10px;
+    border: 2px solid #2C8C99;
+    width: 550px;
+    margin-bottom: 30px;
+    color: #a5ccec;
+    transition: 0.5s;
+    margin: 30px auto; 
+}
+.quiz:hover{
+    background-color: #2C8C99;
+    color: #011627;
+    box-shadow: 5px 5px 5px black;
+}
+.details:hover{
+    background-color: #2C8C99;
+    color: #011627;
+    box-shadow: 5px 5px 5px black;
+}
+.rnb:hover{
+    background-color: #2C8C99;
+    color: #011627;
+    box-shadow: 5px 5px 5px black;
+}
+.quiz p{
+    padding: 2px 100px;
+}
+.details p{
+    padding: 2px 100px;
+}
+.rnb p{
+    padding: 2px 100px;
+}
+.quiz a,
+.details a,
+.rnb a{
+    text-decoration: none;
+    background-color: #011627;
+    border-radius: 10px;
+    padding: 5px 7px;
+    color: white;
+    transition: 0.3s;
+}
+.quiz a:hover, 
+.details a:hover, 
+.rnb a:hover{
+    background-color: #2C8C99;
+    border: 1px solid #1d5f67;
+    color: #011627;
+    box-shadow: 3px 3px  black;
+}
+
+#toTopButton{
+    background-color: #011627;
+    border: 1px solid #5e9fd4;
+    border-radius: 8px;
+    color: #5e9fd4;
+    padding: 10px 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-left: 95%;
+    text-decoration: none;
+}
+#toTopButton:hover{
+    background-color: #5e9fd4;
+    color: #011627;
+}
