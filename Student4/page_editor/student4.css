@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    }
+body{
+    background-color: #28464B;
+}
+.heading{
+    text-align: center;
+    /* background-color: #42D9C8; */
+    padding: 10px 0px;
+    margin-bottom: 30px;
+    color: #a5ccec;
+}
+.heading span{
+    font-size: 20px;
+    color: #e1e8ed;
+    text-shadow: 1px 1px 1px gray;
+}
+.gallery{
+    text-align:center;
+    background-color: #326771;
+    padding: 35px 10px ;
+    border-radius: 10px;
+    border: 2px solid #2C8C99;
+    width: 550px;
+    margin-bottom: 30px;
+    color: #a5ccec;
+    transition: 0.5s;
+    margin: 30px ; 
+}
+
+.sitemap{
+    text-align:center;
+    background-color: #326771;
+    padding: 65px 10px ;
+    border-radius: 10px;
+    border: 2px solid #2C8C99;
+    width: 550px;
+    color: #a5ccec;
+    transition: 0.5s;
+    margin-left: auto;
+    margin-top: -520px;
+
+}
+
+.jazz{
+    text-align: center;
+    background-color: #326771;
+    padding: 15px 10px ;
+    border-radius: 10px;
+    border: 2px solid #2C8C99;
+    width: 550px;
+    margin-bottom: 30px;
+    color: #a5ccec;
+    transition: 0.5s;
+    margin: 30px auto;
+
+}
+
+.sitemap p{
+    padding: 2px 100px;
+}
+.gallery p{
+    padding: 2px 100px;
+}
+.jazz p{
+    padding: 2px 100px;
+}
+.gallery a,
+.sitemap a,
+.jazz a{
+    text-decoration: none;
+    background-color: #011627;
+    border-radius: 10px;
+    padding: 5px 7px;
+    color: white;
+    transition: 0.3s;
+    
+    
+}
+
+

@@ -1,0 +1,318 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: #011627;
+}
+
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 55px;
+    background-color: #011627;
+    margin: auto;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .navbar li.home a,
+  .navbar li.comments a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .navbar li.home a::after,
+  .navbar li.comments a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  
+  }
+  
+  .navbar ul {
+    float: right;
+    margin-top: 3px;
+  }
+  
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 17.5px;
+  
+  }
+  
+  .navbar ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 13px;
+  
+  }
+  
+  
+  li a:hover {
+    background: gray;
+    transition: 0.5s;
+    border-radius: 1px; 
+  
+  }
+
+.container h1, p{
+    color: white;
+}
+.container h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+.container p{
+    line-height: 25px;
+}
+.container{
+    width: 700px;
+    height: 300px;
+    margin-top: 350px;
+    margin-left: 40px;
+    height: 100vh;
+}
+.container a{
+    background-color: #011627;
+    color: aqua;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px 10px;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.container a:hover{
+    color: #ffffff;
+    background-color: #4c4a87;
+    box-shadow: 3px 3px #011627;
+}
+
+
+.Instruments{
+    background: linear-gradient(to bottom,#011627 , #51858b);
+    padding-top: 20px;
+}
+
+.intrumentDetailsScreen{
+    height: 100vh;
+}
+#instrumentDetails{
+    color: #ffffff;
+    text-align: center;
+}
+.instruments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 70px;
+}
+.instruments img{
+    height: 300px;
+    cursor: pointer;
+    margin: 10px 30px;
+    transition: 0.5s;
+}
+
+.instruments div p{
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    font-size: larger;
+    padding: 5px 0px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 2px #000000;
+    border-radius: 10px;
+}
+.moreInfo{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.instruments a:hover+p{
+    transition: 1s;
+    opacity: 1;
+    background-color: #031d32;
+}
+
+
+.albums{
+    background: linear-gradient(349deg, #2C8C99 0%,#28464B 73%);
+}
+
+#albumDetails{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+.container3{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.container3 div{
+    width: 40%;
+    padding: 50px;
+}
+.container3 img{
+    float: left;
+    height: 300px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.container3 img:hover{
+    box-shadow: 5px 5px 5px rgb(15, 16, 22);
+}
+.container3 p{
+    margin: 45px 20px 0px;
+    line-height: 40px;
+    color: #e4d0f7;
+}
+.container3 span{
+    font-size: 20px;
+    color: #ffffff;
+    
+}
+.container3 a{
+    background-color: #011627;
+    color: #5e9fd4;
+    border: none;
+    border-radius: 10px;
+    padding: 9px 10px;
+    margin-right: 10px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+.container3 a:hover{
+    background-color: #5e9fd4;
+    color: #011627;
+    box-shadow: 4px 4px 4px black;
+}
+
+
+
+.JazzMuseums{
+    background: linear-gradient(200deg, rgb(1, 22, 39,1) 0%, rgba(1,22,39,1) 73%);
+    padding-top: 20px;
+}
+
+.jmScreen{
+    height: 100vh;
+}
+#jm{
+    color: #ffffff;
+    text-align: center;
+}
+.jazzmuseums{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.jazzmuseums img{
+    height: 300px;
+    cursor: pointer;
+    margin: 10px 30px;
+    transition: 0.5s;
+}
+
+.jazzmuseums div p{
+    opacity: 0;
+    transition: 0.5s;
+    text-align: center;
+    font-size: larger;
+    padding: 5px 0px;
+    margin-top: 0px;
+    text-shadow: 2px 2px 2px #000000;
+    border-radius: 10px;
+}
+.moreInfo{
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.jazzmuseums a:hover+p{
+    transition: 1s;
+    opacity: 1;
+    background-color: #031829;
+}
+.jazzmuseums img:hover{
+    box-shadow: 3px 3px 3px black;
+}
+
+
+
+#toTopButton{
+    background-color: #011627;
+  border: 1px solid #5e9fd4;
+  border-radius: 8px;
+  color: #5e9fd4;
+  padding: 10px 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  position: fixed; 
+  bottom: 15px; 
+  right: 15px;
+  text-decoration: none;
+}
+#toTopButton:hover{
+    background-color: #5e9fd4;
+    color: #011627;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #011a2f;
+}
+footer p{
+    color: #e4d0f7;
+}
+footer a{
+    margin: 10px 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #022643;
+    color: #e4d0f7;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+footer a:hover{
+    background-color:#011627;
+}
+
+.logo{
+    width: 86px;
+    margin-left: 23px;
+    cursor: pointer;
+}
