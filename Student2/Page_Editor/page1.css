@@ -1,0 +1,102 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+/* page1.css */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #468a69; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px;
+    border-bottom: 5px solid #333; 
+    border-top: 5px solid #333;
+    text-align: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.container h1 {
+    margin-top: 10px; 
+}
+
+.content-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Center the .infor div */
+.infor {
+    max-width: 600px;
+    margin:  auto;
+    padding: 10px;
+    border: 2px solid #468a69;
+    text-align: center;
+}
+
+/* Style the paragraphs and add horizontal lines */
+.infor p {
+    margin-bottom: 8px;
+    color: #022e11;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* Add space between paragraphs */
+.content-container p {
+    margin-bottom: 10px;
+}
+
+/* Set font color to black and font size to normal */
+.content-container p {
+    color: #000;
+    font-size: 16px;
+}
+
+.content-container::before,
+.content-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: #333;
+}
+
+.content-container::before {
+    left: 80px;
+}
+
+.content-container::after {
+    right: 80px;
+}
+
+/* Style the button links */
+.content-container a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.content-container a:hover {
+    background-color: #555;
+}
+
+.content-container .button-container {
+    display: flex;
+    justify-content: center;
+}

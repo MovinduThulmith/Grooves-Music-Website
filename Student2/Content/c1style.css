@@ -1,0 +1,679 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+  }
+  
+  body {
+    background-size: 100% 100%;
+    width: 460px;
+    overflow-x: hidden;
+    background-color: #011627;
+  }
+  /* Navigation Bar */
+
+  .navbar {
+    position: fixed;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 55px;
+    background-color: #011627;
+    margin: auto;
+    padding-right: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .navbar li.home a,
+  .navbar li.comments a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .navbar li.home a::after,
+  .navbar li.comments a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+  
+  }
+  
+  .navbar ul {
+    float: right;
+    margin-top: 3px;
+  }
+  
+  .navbar li {
+    list-style: none;
+    display: inline-block;
+    margin: 17.5px;
+  
+  }
+  
+  .navbar ul a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 10px;
+    font-size: 13px;
+  
+  }
+  
+  
+  li a:hover {
+    background: gray;
+    transition: 0.5s;
+    border-radius: 1px; 
+  
+  }
+  
+  .navbar img{
+    width: 86px;
+    margin-left: 23px;
+    cursor: pointer;
+  }
+  /* paragraph */
+  
+
+/* images */
+.cs img {
+    width: 100%; 
+    height: 1110px;
+  }
+
+.cc{
+    width:400%;
+    height: 1110px;
+    margin: auto;
+    border: transparent;
+    overflow: hidden;
+
+}
+
+.cs{
+    display: flex;
+    width: 100%;
+    height: 500px;
+
+}
+/* Buttons */
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 40%;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5); /* Add background color to make the arrow visible */
+  padding: 5px 8px;
+  border-radius: 50%; /* Make the button circular */
+}
+
+#prevBtn {
+  left: 5%;
+}
+
+#nextBtn {
+  right: 5%;
+}
+
+/*Title  */
+
+.textbox {
+    padding: 50px;
+    color: #516d82;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    width: 800px;
+    
+  }
+  
+  .textbox p{
+    font-size: 20px;
+    text-align: justify;
+    
+  }
+  
+  .textbox h1 {
+    font-size: 120px;
+    line-height: 160px;
+    color: transparent;
+    -webkit-text-stroke: 3px #f7fbff;
+    background: url(line2.jpg);
+    -webkit-background-clip: text;
+    margin-bottom: auto; 
+  }
+  
+  .paragraph{
+    padding-top: 25px;
+    width: 600px;
+    height: 10px;
+  }
+  
+  .paragraph a,span{
+    text-align: left;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .textbox a{
+    color: #193f44;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin-right: 20px;
+    width:150px;
+    border: 2px solid #345f6a;
+  }
+  
+  /* Albums */
+  .instruments{
+    background: linear-gradient(349deg, #011627, #BBC4C7 73%);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 200px;    
+    backdrop-filter: blur(10px); 
+    width: 110%;
+    height: 1120px;
+    position: absolute;
+    top: 1100px;
+    right: 2px;
+  }
+  
+  .albums1{
+    background: linear-gradient(349deg, #BBC4C7,#011627 73%);
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 200px;    
+    backdrop-filter: blur(10px); 
+    width: 110%;
+    height: 10px;
+    position: absolute;
+      
+  }
+  
+  .instruments fieldset {
+    width: 30%;
+    height: 80px; 
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .instruments h2 {
+    text-align: center;
+    margin: 0; 
+  }
+  
+  
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left:0 auto;
+    padding-top: 30px;
+    padding-left: 50px;
+  
+  }
+  
+  .card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .image-container {
+    position: relative;
+  
+  }
+  
+  .cards-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: inline;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: 4px solid #28464B;
+  
+  }
+  
+  .cards-img:hover {
+    transform: scale(1.2);
+  
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130px;
+    height: 30px;
+    background-color: rgba(229, 222, 222, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+  
+  }
+  
+  .card:hover .overlay {
+    opacity: 1;
+  
+  }
+  
+  .card a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    white-space: nowrap; 
+  
+  }
+  
+  .content1 h3 {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    font-size: 50px;
+  
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    
+  }
+  
+  /* bands */
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left:0 auto;
+    padding-top: 30px;
+    padding-left: 50px;
+  
+  }
+  
+  .card2 {
+    width: calc(25% - 20px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .image-container {
+    position: relative;
+  
+  }
+  
+  .cards-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: inline;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    border: 4px solid #28464B;
+  
+  }
+  
+  .cards-img:hover {
+    transform: scale(1.2);
+  
+  }
+  
+  .overlay {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    width: 130px;
+    height: 30px;
+    background-color: rgba(229, 222, 222, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    padding-top: 10px;
+  
+  }
+  
+  .card2:hover .overlay {
+    opacity: 1;
+  
+  }
+  
+  .card2 a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    white-space: nowrap; 
+  
+  }
+  
+  .content1 h3 {
+    padding-top: 250px;
+    padding-bottom: 100px;
+    font-size: 50px;
+  
+  }
+  
+  .cards h4 {
+    font-size: 30px;
+    padding: 0;
+    margin-top: 30px;
+  
+  }
+  
+  .card2 a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .music-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card2:hover .music-info {
+    opacity: 1;
+  }
+  
+  .music-info h4,
+  .music-info p {
+    margin: 5px 0;
+  }
+  
+  /* gallery */
+  .container{
+    background: linear-gradient(349deg, #437181,#011627 73%);
+    padding: 20px;
+    position: absolute;
+    top: 2000px;
+    width: 100%; 
+    height: 1000px;
+    backdrop-filter: blur(10px); 
+    font-size: medium;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    border-top: 10px solid white; /* Add top border */
+    border-bottom: 2px solid white;
+  }
+  
+  .container .heading{
+    width: 50%;
+    padding-bottom: 50px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    color: #fff;
+  
+  }
+  
+  .container .heading h3{
+    font-size: 3em;
+    font-weight: bolder;
+    padding-top: 50px;
+    border-bottom: 3px solid #eae5e5;
+  
+  }
+  
+  .container .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  .container .box .dream{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    position: relative;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .container .box .dream .overlay {
+    position: absolute;
+    bottom: 65%;
+    left: 25%;
+    width: 50%;
+    height: 30px;
+    background-color: rgba(18, 17, 17, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .container .box .dream:hover .overlay {
+    opacity: 1;
+  }
+  
+  .container .box .dream img {
+    width: 320px; 
+    height: auto; 
+    margin-bottom: 10px; 
+    position: relative;
+    border-radius: 10px;
+  
+  }
+  
+  .container .box .dream img:hover {
+    transform: scale(1.3); 
+  }
+  
+  .container .box .dream .music-info {
+    position: absolute;
+    top: 20px;
+    left: 2%;
+    bottom: 50px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .container .box .dream:hover .music-info {
+    opacity: 1;
+  }
+  
+  .container .box .dream .music-info h4,
+  .container .box .dream .music-info p {
+    margin: 5px 0;
+  }
+  
+  .container .box .dream .overlay a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    white-space: nowrap;
+    color: inherit;
+  }
+  /* music infor 1 */
+  .container .box .dream .music-info1 {
+    position: absolute;
+    left: 2%;
+    bottom: 140px;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .container .box .dream:hover .music-info1 {
+    opacity: 1;
+  }
+  
+  .container .box .dream .music-info1 h4,
+  .container .box .dream .music-info1 p {
+    margin: 5px 0;
+  }
+  
+  .container .box .dream .overlay1 {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    height: 30px;
+    background-color: rgba(18, 17, 17, 0.5);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0%;
+    border-radius: 10px;
+  }
+  
+  .container .box .dream:hover .overlay1 {
+    opacity: 1;
+  }
+  
+  .container .box .dream .overlay1 a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: small;
+    padding: 8px 20px;
+    background-color: transparent;
+    border-radius: 5px;
+    white-space: nowrap;
+    color: inherit;
+  }
+  
+  
+  /* Top */
+  #toTopButton {
+    bottom: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #28464B; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #toTopButton:hover {
+    background-color: #011627; 
+  }
+
+  /* Footer */
+footer {
+  width: 100%;
+  height: 45px;
+  background-color: #333; 
+  color: white;
+  text-align: right;
+  line-height: 55px; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer button {
+  padding: 8px 16px;
+  background-color: #28464B;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-right: 350px;
+  margin-top: 2px;
+}
+
+footer button:hover {
+  background-color: #011627;
+}
+footer p {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 20%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 14px;
+  opacity: 0.7;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Feedback Form</title>
+    <link rel="icon" type="img/x-icon" href="Logo1.jpg" />
+
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <a href="../Main_Page/index4.html"><img src="logo.jpg" alt="Logo" class="logo-image" /></a>
+        
+        <ul>
+          <li><a href="../Main_Page/index4.html">Home</a></li>
+          <li><a href="../../1_Kavindu/Store/store.html">Store</a></li>
+          <li class="comments"><a href="#">Comments</a></li>
+          <li><a href="../../4_Brian/Sitemap/sitemap.html">Site map</a></li>
+          <li><a href="../../3_Movindu/QUIZ/Firstpage.html">Quiz</a></li>
+          <li>
+            <a href="../../4_Brian/Gallery/Gallery_img.html">Gallery</a>
+          </li>
+          <li>
+            <a href="../../3_Movindu/STUDENT_DETAILS/StudentDetails.html"
+              >About Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="Form-container">
+      <form
+        action="https://formspree.io/f/xzblzyvl/ranidhiperera123@gmail.com"
+        method="POST"
+        onsubmit="return validateForm()"
+      >
+        <h1>Your Feedback is Important for Us</h1>
+
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="lable">
+            <label for="first_name">First Name</label>
+            <div class="lable1">
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+          </div>
+
+          <div class="lable">
+            <label for="last_name">Last Name</label>
+            <div class="lable1">
+              <input type="text" id="last_name" name="last_name" required />
+            </div>
+          </div>
+
+          <div class="lable">
+            <label for="email">Email*</label>
+            <div class="lable1">
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="lable">
+            <label for="phone_number">Phone Number</label>
+            <div class="lable1">
+              <input
+                type="tel"
+                id="phone_number"
+                name="phone_number"
+                required
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Information</legend>
+
+          <div class="lable2">
+            <label for="feedback">What genre of music do you like?*</label>
+            <textarea
+              name="feedback1"
+              id="Feedback1"
+              cols="60"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="lable2">
+            <label for="feedback">How did you here about us*</label>
+            <textarea
+              name="feedback2"
+              id="Feedback2"
+              cols="60"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="lable2">
+            <label for="feedback">
+              Do you feel our [product or service] is worth the cost?</label
+            >
+            <textarea
+              name="Comments"
+              id="comments"
+              cols="60"
+              rows="5"
+            ></textarea>
+          </div>
+
+          <div class="lable">
+            <label for="lable1"
+              >How would you rate your in-store visit experience today?*</label
+            >
+
+            <select name="rating" required>
+              <option value="" disabled selected>Select a rating</option>
+              <option value="1">1 - Poor</option>
+              <option value="2">2 - Fair</option>
+              <option value="3">3 - Average</option>
+              <option value="4">4 - Good</option>
+              <option value="5">5 - Excellent</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div class="buttons">
+          <input type="reset" name="reset" value="Reset" />
+          <input type="submit" name="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    
+    <footer>
+      <a href="../Page_Editor/pageeditor.html"><button>Page editor</button></a>
+      <p>CopyRight &copy; 2023 Grooves All rights reserved</p>
+    </footer>
+
+
+
+
+    <!-- Form validation -->
+    <script>
+      function validateForm() {
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const phoneNumber = document.getElementById("phoneNumber").value;
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const phoneNumberRegex = /^\d+$/;
+        const nameRegex = /^[A-Za-z]+$/;
+
+        if (firstName.trim() === "") {
+          alert("Please enter your First Name.");
+          return false;
+        }
+        if (!nameRegex.test(firstName)) {
+          alert("Please enter only letters in the First Name field.");
+          return false;
+        }
+        if (lastName.trim() === "") {
+          alert("Please enter your Last Name.");
+          return false;
+        }
+        if (!nameRegex.test(lastName)) {
+          alert("Please enter only letters in the Last Name field.");
+          return false;
+        }
+        if (email.trim() === "" || !emailRegex.test(email)) {
+          alert("Please enter a valid Email Address.");
+          return false;
+        }
+        if (phoneNumber.trim() === "" || !phoneNumberRegex.test(phoneNumber)) {
+          alert("Please enter a valid Phone Number.");
+          return false;
+        }
+        return true;
+      }
+
+      document
+        .getElementById("firstName")
+        .addEventListener("input", function (e) {
+          const input = e.target.value;
+          if (input.trim() === "") {
+            document.getElementById("firstNameError").innerText =
+              "Please enter your First Name.";
+          } else if (!/^[A-Za-z]+$/.test(input)) {
+            document.getElementById("firstNameError").innerText =
+              "Please enter only letters in the First Name field.";
+          } else {
+            document.getElementById("firstNameError").innerText = "";
+          }
+        });
+
+      document
+        .getElementById("lastName")
+        .addEventListener("input", function (e) {
+          const input = e.target.value;
+          if (input.trim() === "") {
+            document.getElementById("lastNameError").innerText =
+              "Please enter your Last Name.";
+          } else if (!/^[A-Za-z]+$/.test(input)) {
+            document.getElementById("lastNameError").innerText =
+              "Please enter only letters in the Last Name field.";
+          } else {
+            document.getElementById("lastNameError").innerText = "";
+          }
+        });
+    </script>
+  </body>
+</html>
