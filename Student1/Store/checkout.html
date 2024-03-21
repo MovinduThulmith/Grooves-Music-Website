@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Checkout</title>
+      <!-- Tab icon -->
+      <link rel="icon" type="img/x-icon" href="images/icon.jpeg" />
+      <!-- CSS File -->
+      <link rel="stylesheet" href="styles.css" />
+   </head>
+   <body>
+      <!-- Navigation Bar -->
+      <nav>
+         <div class="navbar">
+            <a href="../../2_Ranidhi/Main_Page/index4.html"
+               ><img src="images/logo.jpg" alt="Logo" class="logoImage"
+            /></a>
+            <ul>
+               <li>
+                  <a href="../../2_Ranidhi/Main_Page/index4.html">Home</a>
+               </li>
+               <li class="active"><a href="#">Store</a></li>
+               <li>
+                  <a href="../../2_Ranidhi/Comment/Feedback.html">Comments</a>
+               </li>
+               <li>
+                  <a href="../../4_Brian/Sitemap/sitemap.html">Site map</a>
+               </li>
+               <li>
+                  <a href="../../3_Movindu/QUIZ/Firstpage.html">Quiz</a>
+               </li>
+               <li>
+                  <a href="../../4_Brian/Gallery/Gallery_img.html">Gallery</a>
+               </li>
+               <li>
+                  <a href="../../3_Movindu/STUDENT_DETAILS/StudentDetails.html"
+                     >About Us</a
+                  >
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="checkoutContainer">
+         <!-- Sidebar -->
+         <div class="detailContainer">
+            <h2 style="position: absolute; top: 75px; padding-left: 10px">
+               Billing Information
+            </h2>
+            <!-- Form -->
+            <div class="formContainer">
+               <form id="checkoutForm">
+                  <!-- Card Details -->
+                  <div class="paymentInfo">
+                     <h2>Payment Details</h2>
+                     <div class="inputBox">
+                        <label for="name">Cardholder's Name *</label>
+                        <input type="text" name="name" id="name" />
+                        <p class="errorMessage" id="nameError"></p>
+                     </div>
+
+                     <div class="inputBox">
+                        <label for="cardNumber">Card Number *</label>
+                        <input type="text" name="cardNumber" id="cardNumber" />
+                        <p class="errorMessage" id="cardNumberError"></p>
+                     </div>
+
+                     <div class="inputBox">
+                        <label for="cardMonth">Expiration Month *</label>
+                        <input type="text" name="cardMonth" id="cardMonth" />
+                        <p class="errorMessage" id="cardMonthError"></p>
+                     </div>
+
+                     <div class="inputBox">
+                        <label for="cardYear">Expiration Year *</label>
+                        <input type="text" name="cardYear" id="cardYear" />
+                        <p class="errorMessage" id="cardYearError"></p>
+                     </div>
+
+                     <div class="inputBox">
+                        <label for="cardCVN">CVN *</label>
+                        <input type="text" name="cardCVN" id="cardCVN" />
+                        <p class="errorMessage" id="cardCVNError"></p>
+                     </div>
+                  </div>
+
+                  <!-- Contact Details -->
+                  <div class="contactInfo">
+                     <h2>Contact Details</h2>
+                     <div class="inputBox">
+                        <label for="phoneNumber">Phone Number *</label>
+                        <input
+                           type="text"
+                           name="phoneNumber"
+                           id="phoneNumber"
+                        />
+                        <p class="errorMessage" id="phoneNumberError"></p>
+                     </div>
+
+                     <div class="inputBox">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" />
+                     </div>
+
+                     <div class="inputBox">
+                        <label for="email">Email *</label>
+                        <input
+                           type="text"
+                           name="email"
+                           id="email"
+                           placeholder="example@example.com"
+                        />
+                        <p class="errorMessage" id="emailError"></p>
+                     </div>
+                  </div>
+                  <div class="buttons">
+                     <div class="buttonReset btn"><input type="reset" /></div>
+                     <div class="buttonSubmit btn"><input type="submit" /></div>
+                  </div>
+               </form>
+            </div>
+
+            <div class="totalContainer"></div>
+         </div>
+
+         <!-- Added Product Details -->
+         <div class="cartDetails">
+            <h2>Your Cart</h2>
+            <div id="cartContent">
+               <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="finals" id="totalQuantity">
+               <!-- The amount of products will be updated here -->
+            </div>
+            <div class="finals" id="totalPrice">
+               <!-- Total price will be updated here -->
+            </div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <footer>
+         <a href="../PageEditor/kavindu.html" target="_blank">Page editor</a>
+         <p>Copyright &copy; 2023 Grooves. All rights reserved</p>
+      </footer>
+      <!-- JS File -->
+      <script src="checkoutScript.js"></script>
+   </body>
+</html>
